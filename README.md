@@ -1,7 +1,7 @@
 g0ng
 ====
 
-A Golang N-Gram package
+A Golang uni-gram package
 
 # Install
 
@@ -14,7 +14,7 @@ go get github.com/ear7h/gong
 # Quick reference API 
 
 ```go
-r := g0ng.New()                   //new ngram
+r := g0ng.New()                   //new unigram
 r.Insert([]rune("a string"))      //insert a string
 sub, err := r.Find([]rune("a s")) //get subtree where all items match the input
 if err == nil {
@@ -35,7 +35,7 @@ import (
 )
 ```
 
-### Create a root for the n-gram tree:
+### Create a root for the tree:
 
 ```go
 r := g0ng.New()
